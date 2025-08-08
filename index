@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miraseti - Sito in manutenzione</title>
+    <meta name="description" content="Il sito Miraseti è temporaneamente in manutenzione. Torna presto per scoprire tutte le novità!">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(120deg, #fff8dc 60%, #fdf6e3 100%);
+            font-family: 'Montserrat', Arial, sans-serif;
+            color: #ac8300;
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .maintenance-container {
+            background: #fffdfa;
+            border-radius: 16px;
+            box-shadow: 0 4px 32px rgba(222,193,98,0.13);
+            max-width: 430px;
+            padding: 2.5rem 2rem;
+            text-align: center;
+        }
+        .maintenance-container h1 {
+            font-size: 2em;
+            margin-bottom: 0.6em;
+            color: #cba000;
+        }
+        .maintenance-container p {
+            font-size: 1.2em;
+            margin-bottom: 1.2em;
+            color: #6c5500;
+        }
+        .maintenance-icon {
+            font-size: 3em;
+            margin-bottom: 0.7em;
+        }
+        @media (max-width: 600px) {
+            .maintenance-container {
+                padding: 1.2rem 0.5rem;
+            }
+            .maintenance-container h1 {
+                font-size: 1.3em;
+            }
+            .maintenance-icon {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="maintenance-container">
+        <div class="maintenance-icon">🛠️</div>
+        <h1>Sito in manutenzione</h1>
+        <p>
+            Stiamo lavorando per migliorare la tua esperienza su Miraseti.<br>
+            Torna presto per scoprire tutte le novità!
+        </p>
+        <small>&copy; 2025 Miraseti</small>
+    </div>
+</body>
+</html>
