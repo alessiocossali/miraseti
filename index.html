@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Miraseti</title>
+  <meta name="description" content="Miraseti - Zafferano per ristorazione in Lombardia." />
+
+  <link rel="icon" href="assets/img/favicon.png" />
+
+  <meta property="og:title" content="Miraseti" />
+  <meta property="og:description" content="Zafferano di qualità, selezionato all’origine." />
+  <meta property="og:image" content="assets/img/og.jpg" />
+  <meta property="og:type" content="website" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+
+<body>
+  <main>
+
+    <!-- Logo full screen -->
+    <section class="screen screen--hero" id="top" aria-label="Miraseti">
+      <div class="hero__inner">
+        <img class="logo" src="assets/img/logo.png" alt="Miraseti" />
+        <a class="scroll-hint" href="#product" aria-label="Scorri per continuare">
+          <span class="scroll-hint__text">Scroll</span>
+          <span class="scroll-hint__arrow" aria-hidden="true">↓</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- Prodotto -->
+    <section class="screen screen--product" id="product" aria-label="Prodotto">
+      <div class="content content--center">
+        <img class="product-img" src="assets/img/product.png" alt="Zafferano Miraseti" loading="lazy" />
+      </div>
+    </section>
+
+    <!-- Testo -->
+    <section class="screen screen--text" id="about" aria-label="Cosa facciamo">
+      <div class="content content--center">
+        <p class="kicker">MIRASETI</p>
+        <h1 class="title">Zafferano di qualità, selezionato all’origine.</h1>
+
+        <p class="text">
+          Miraseti nasce dalla passione per la buona cucina lombarda e dal desiderio di rendere accessibile ai ristoratori uno zafferano di valore.
+          Selezioniamo, importiamo e consegniamo direttamente, senza intermediari, per offrire qualità costante e prezzo corretto.
+        </p>
+
+        <p class="text text--tight">
+          Il nostro zafferano proviene dall’Iran. Forniamo pistilli e zafferano in polvere macinato fresco, per preservare purezza e aromaticità.
+          Siamo attivi in tutta la Lombardia: se sei un ristoratore, possiamo consegnarti un campione gratuito.
+        </p>
+      </div>
+    </section>
+
+    <!-- Contatti -->
+    <section class="screen screen--contacts" id="contacts" aria-label="Contatti">
+      <div class="content content--center">
+        <button class="btn" type="button" data-open-modal>Richiedi un campione</button>
+
+        <div class="contacts">
+          <a class="contact" href="tel:+393520600603">+39 3520600603</a>
+          <a class="contact" href="https://wa.me/393520600603" target="_blank" rel="noopener">WhatsApp</a>
+          <a class="contact" href="mailto:info@miraseti.com">info@miraseti.com</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dati società -->
+    <section class="screen screen--company" id="company" aria-label="Dati societari">
+      <div class="content content--center">
+        <h2 class="subtitle">Dati societari</h2>
+        <div class="company">
+          <p><strong>Miraseti S.r.l.</strong></p>
+          <p>P.IVA: 04817020169</p>
+          <p>Via A. Manzoni 156, 24025, Gazzaniga (BG)</p>
+          <p>REA: BG 491370</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Modal -->
+  <div class="modal" id="contactModal" aria-hidden="true">
+    <div class="modal__overlay" data-close-modal></div>
+
+    <div class="modal__panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal__close" type="button" aria-label="Chiudi" data-close-modal>×</button>
+
+      <h3 class="modal__title" id="modalTitle">Richiedi un campione</h3>
+      <p class="modal__text">Lascia email e numero: ti ricontattiamo per organizzare la consegna.</p>
+
+      <form class="form" id="contactForm" action="https://formsubmit.co/info@miraseti.com" method="POST">
+        <input type="hidden" name="_subject" value="Richiesta campione dal sito miraseti.com" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="hidden" name="_template" value="table" />
+
+        <label class="field">
+          Email
+          <input type="email" name="email" autocomplete="email" required />
+        </label>
+
+        <label class="field">
+          Telefono
+          <input type="tel" name="phone" autocomplete="tel" required />
+        </label>
+
+        <label class="field">
+          Nome (opzionale)
+          <input type="text" name="name" autocomplete="name" />
+        </label>
+
+        <button class="btn btn--full" type="submit">Invia</button>
+        <p class="fineprint">I dati vengono inoltrati via email tramite FormSubmit.</p>
+      </form>
+    </div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
