@@ -1,4 +1,5 @@
-// assets/js/main.js
+
+console.log("main.js caricato");// assets/js/main.js
 (() => {
   const MODAL_HTML = `
     <div class="modal" data-modal hidden aria-hidden="true">
